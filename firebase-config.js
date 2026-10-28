@@ -2,12 +2,11 @@
 // Leave it as null to run in local mode: votes save only in this browser.
 window.FIREBASE_CONFIG = null;
 
-// Example:
-// window.FIREBASE_CONFIG = {
-//   apiKey: "AIza...",
-//   authDomain: "your-project.firebaseapp.com",
-//   projectId: "your-project",
-//   storageBucket: "your-project.appspot.com",
-//   messagingSenderId: "1234567890",
-//   appId: "1:1234567890:web:abc123",
-// };
+{
+  apiKey: "AIzaSyBkSWYU-AHt3ApxqEHyQAbocNshIZ-YgNU",
+  authDomain: "shower-5b537.firebaseapp.com",
+  projectId: "shower-5b537",
+  storageBucket: "shower-5b537.firebasestorage.app",
+  messagingSenderId: "773327542321",
+  appId: "1:773327542321:web:810cf8eed08ab8e6711d10"
+};

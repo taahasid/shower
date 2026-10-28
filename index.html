@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Did They Shower?</title>
+  <meta name="description" content="Daily shower votes for Aamina and Hafsa, signed by Sarmad and Taaha.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚿</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&family=JetBrains+Mono:wght@500&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="eyebrow">Daily hygiene audit</div>
+      <h1>Did they <span>shower</span> today?</h1>
+      <p class="sub">Each day gets one yes or no for Aamina and Hafsa. A vote only counts with the right signature: Sarmad signs for Aamina, Taaha signs for Hafsa. Tap any past tile to fill in or correct that day.</p>
+    </header>
+    <div class="notice" id="notice" hidden></div>
+    <div class="monthbar">
+      <button class="iconbtn" id="prev" aria-label="Previous month">←</button>
+      <h2 id="monthName"></h2>
+      <button class="iconbtn" id="next" aria-label="Next month">→</button>
+      <button class="iconbtn" id="todayBtn">Today</button>
+      <span class="status" id="status">Connecting…</span>
+    </div>
+    <div class="people" id="people"></div>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+  <script src="firebase-config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

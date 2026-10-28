@@ -1,0 +1,17 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /log/{entryId} {
+      allow read: if true;
+      // Only well-formed votes with the right signer for each person.
+      allow write: if request.resource.data.keys().hasOnly(['date', 'person', 'showered', 'signedBy', 'signedAt'])
+        && request.resource.data.showered is bool
+        && request.resource.data.date is string
+        && entryId == request.resource.data.date + '_' + request.resource.data.person
+        && (
+          (request.resource.data.person == 'aamina' && request.resource.data.signedBy == 'Sarmad') ||
+          (request.resource.data.person == 'hafsa' && request.resource.data.signedBy == 'Taaha')
+        );
+    }
+  }
+}

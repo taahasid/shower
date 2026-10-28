@@ -1,6 +1,6 @@
 // Paste your Firebase web app config here (see README.md).
 // Leave it as null to run in local mode: votes save only in this browser.
-window.FIREBASE_CONFIG = null;
+window.FIREBASE_CONFIG = 
 
 {
   apiKey: "AIzaSyBkSWYU-AHt3ApxqEHyQAbocNshIZ-YgNU",
